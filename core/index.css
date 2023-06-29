@@ -1,0 +1,80 @@
+.game{
+    flex-basis: 800px;
+}
+.leaderboard{
+    flex: auto;
+    background-color: #693213;
+}
+.sun{
+    position: absolute;
+    top: 71px;
+    left: 135px;
+    font-size: 1.2rem;
+}
+
+.alert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================================================= */
+.board{
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}
+.board > * {
+    /* border: 2px solid red; */
+    width: 82px;
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    transition: all;
+    background-color: transparent;
+    transition-duration: 100ms;
+}
+
+/* ============================================================= */
+.info{
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 440px;
+}
+.shovel{
+    width: 55px;
+    position: absolute;
+    top: 15px;
+    left: 637px;
+
+}
+.plant-card{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    top: 15px;
+    left: 190px;
+}
+.seed-selected {
+    /* box-sizing: border-box; */
+    margin: 0;
+    border: 4px solid green;
+}
+
+
+
+
+
+.lawnmower{
+    position: absolute;
+    /* left: 0px; */
+}
