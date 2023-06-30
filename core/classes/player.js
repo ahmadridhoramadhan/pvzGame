@@ -114,6 +114,8 @@ class Player {
 
         const dataScores = JSON.parse(this.getCookie('dataScore'))
 
+        if (!dataScores) return
+
         if (sortMethod == 'score') {
             dataScores.sort((a, b) => b.score - a.score)
         } else {
