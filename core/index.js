@@ -1,3 +1,8 @@
+alert('ika anda melihat game berjalan kaku kemungkinan asset gamenya belum sepenuhnya terload')
+if (window.innerWidth < 1000 || window.innerHeight < 600) {
+    alert("Ukuran layar kurang dari lebar 1000px dan tinggi 600px dan kemungkinan game tidak akan berjalan dengan baik");
+}
+
 
 const timer = new Timer()
 const zombie = new Zombie()

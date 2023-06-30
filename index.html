@@ -57,6 +57,7 @@
             </div>
 
             <ol style="margin-left: 2rem;">
+                <li>it is recommended to use a device that has a cursor like a laptop and so on</li>
                 <li>input username</li>
                 <li>take the sun to choose the plant</li>
                 <li>put a plant into the field to fight zombies</li>
@@ -66,6 +67,12 @@
         </div>
     </div>
     <script>
+
+        alert('disarankan menggunakan device yang memiliki cursor \n\n jika anda melihat game berjalan kaku kemungkinan asset gamenya belum sepenuhnya terload')
+        if (window.innerWidth < 1000 || window.innerHeight < 600) {
+            alert("Ukuran layar kurang dari lebar 1000px dan tinggi 600px dan kemungkinan game tidak akan berjalan dengan baik");
+        }
+
         // function untuk menampilkan instruction
         function instruction(event) {
             const instructionElement = document.getElementById('instruction')
